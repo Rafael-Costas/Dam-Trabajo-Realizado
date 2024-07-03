@@ -1,0 +1,15 @@
+package Examen;
+
+public class Ejercicio1 {
+
+	/*
+	 * Prepare un Servidor TCP que reciba como datos UNA CADENA de caracteres, de al
+	 * menos 5 palabras, enviadas desde un cliente y prepare la devolución de UNA
+	 * CADENA que tenga las mismas palabras pero solamente con las letras
+	 * consonantes. Separe métodos de filtro y de servicio. Indica claramente la
+	 * forma de desconectar el cliente comprobando que se cierra el servicio.
+	 */
+	public static void main(String[] args) {
+
+	}
+}

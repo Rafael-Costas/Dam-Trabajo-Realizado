@@ -1,0 +1,36 @@
+package Examen_24_03;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
+
+
+public class Ejercicio6B {
+
+	public static void main(String[] args) {
+	/*	Escribe un programa que genere una secuencia de 5 cartas de la
+		baraja francesa de palos (corazones, diamantes, picas y tréboles) y
+		números (A,K,Q,J,10,9,8,7,6,5,4,3,2) sin que se repita ninguna.*/
+	HashMap<String, String> lista=  new HashMap<>();
+		
+	
+	ArrayList<Carta> cartas= new ArrayList();
+	Carta c= new Carta();
+	
+		cartas.add(c);
+		do {
+			Carta m = new Carta();
+			if(cartas.contains(m)) {
+				System.out.println("cagaste");
+			}else {
+				cartas.add(m);
+				
+			}
+			
+		}while(cartas.size()<5);
+	for (Carta string : cartas) {
+		System.out.println(string);
+	}
+	}
+	
+}

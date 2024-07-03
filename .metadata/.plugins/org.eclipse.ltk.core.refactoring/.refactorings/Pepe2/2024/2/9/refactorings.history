@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 elements to &apos;Pepe2&apos;&#x0D;&#x0A;- Original project: &apos;Pepe2&apos;&#x0D;&#x0A;- Destination element: &apos;Pepe2&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     contabilidad.txt&#x0D;&#x0A;     comercio.txt&#x0D;&#x0A;     gerencia.txt&#x0D;&#x0A;     informatica.txt&#x0D;&#x0A;     textoB.txt&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="=Pepe2" element1="src/contabilidad.txt" element2="src/comercio.txt" element3="src/gerencia.txt" element4="src/informatica.txt" element5="src/textoB.txt" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1709033036123" units="0" version="1.0"/>
+</session>

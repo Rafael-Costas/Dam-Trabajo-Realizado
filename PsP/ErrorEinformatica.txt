@@ -1,0 +1,2 @@
+Error: no se ha encontrado o cargado la clase principal C:\Users\rafae\eclipse-workspace\PsP\src\Ejemplo6\
+Causado por: java.lang.ClassNotFoundException: C:\Users\rafae\eclipse-workspace\PsP\src\Ejemplo6\

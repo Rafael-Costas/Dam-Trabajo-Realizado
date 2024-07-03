@@ -1,0 +1,33 @@
+package org.apache.maven.AYUDAAAAAAAAA;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import org.hibernate.Session;
+import org.hibernate.query.Query;
+public class mostrar {
+
+	public static void main(String[] args) {
+        SessionFactory sf = new Configuration().configure("hibernate.cfg.xml")
+                                                .addAnnotatedClass(gatos.class)
+                                                .buildSessionFactory();
+        Session session = sf.openSession();
+        
+        session.getTransaction().begin();
+        
+        // Crear la consulta HQL para seleccionar todos los registros de la tabla "gatos"
+        Query<gatos> query = session.createQuery("FROM gatos", gatos.class);
+        
+        // Ejecutar la consulta y obtener los resultados
+        List<gatos> gatosList = query.getResultList();
+        
+        // Iterar sobre los resultados y hacer algo con ellos
+        for (gatos gato : gatosList) {
+            // Aquí puedes imprimir o manipular la información de cada gato, por ejemplo:
+            System.out.println("ID: " + gato.getId() + ", Nombre: " + gato.getNombre() + ", Raza: " + gato.getRaza());
+        }
+        
+        session.getTransaction().commit();
+        session.close();
+        sf.close();
+    }
+}

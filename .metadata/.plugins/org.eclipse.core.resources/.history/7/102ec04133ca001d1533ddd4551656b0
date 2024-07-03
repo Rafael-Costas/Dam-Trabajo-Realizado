@@ -1,0 +1,10 @@
+package Examen_24_03;
+
+public class Ejercicio6B {
+
+	public static void main(String[] args) {
+	/*	Escribe un programa que genere una secuencia de 5 cartas de la
+		baraja francesa de palos (corazones, diamantes, picas y tréboles) y
+		números (A,K,Q,J,10,9,8,7,6,5,4,3,2) sin que se repita ninguna.*/
+	}
+}

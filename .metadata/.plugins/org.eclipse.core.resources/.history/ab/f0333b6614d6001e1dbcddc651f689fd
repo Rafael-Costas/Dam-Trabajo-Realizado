@@ -1,0 +1,8 @@
+package controlador;
+
+import vistas.country;
+
+public class Coordinador {
+
+	country count;
+}

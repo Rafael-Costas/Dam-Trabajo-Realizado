@@ -1,0 +1,32 @@
+package Examen;
+
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+	
+	public static double KiloALibras(double kilos) {
+		double Libras = (kilos*1)/0.453;
+		return Libras;
+	}
+	public static double KiloAStones(double kilos) {
+		double Libras = (kilos*14)/6.35;
+		return (Libras*1)/14;
+	}
+	
+	public static void main(String[] args) {
+		/*
+		 * Método que introduzca el peso en Kg de una persona y lo convierta a su
+		 * cantidad equivalente en stones y libras. 1 stone (st) = 14 lb = 6,35 kg 1
+		 * libra (lb) = 0,453 g Método que introduzca el peso en stones y libras y
+		 * devuelva su cantidad equivalente en kilos.
+		 */
+		Scanner src= new Scanner(System.in);
+		System.out.println("Introduce el peso en kg");
+		double kg=src.nextInt();
+		
+		System.out.println(KiloAStones(kg));
+		
+		System.out.println(KiloALibras(kg));
+	}
+}

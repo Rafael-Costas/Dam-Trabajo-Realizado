@@ -1,0 +1,6 @@
+package controlador;
+
+public class Coordinador {
+
+	country count;
+}

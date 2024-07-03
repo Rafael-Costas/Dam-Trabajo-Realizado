@@ -1,0 +1,72 @@
+package EstudioPsp;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Calendar;
+
+
+
+public class Servidor1 {
+
+	public static void main(String[] arg) throws IOException {
+		int numeroPuerto = 6000;// Puerto
+		ServerSocket servidor = new ServerSocket(numeroPuerto);
+		String cad="";
+		System.out.println("Esperando Conexion...");
+		Socket ClienteConectado=servidor.accept();
+		System.out.println("Cliente conectado");
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter fsalida= new PrintWriter(ClienteConectado.getOutputStream(), true);
+		BufferedReader fentrada = new BufferedReader(new InputStreamReader(ClienteConectado.getInputStream()));
+		String cadena, eco="";
+		String res="";
+		String [] conjunto1;
+		String [] conjunto2;
+		Calendar calendar;
+		String frase1="", frase2="";
+		String ayuda="";
+		while ((cad=fentrada.readLine())!=null) {
+			
+			if(frase2=="" && frase1!="") {
+				frase2=cad;
+			}
+			if(frase1=="") {
+				frase1=cad;
+			}
+		
+			if(frase1!="" && frase2!="") {
+				conjunto1=frase1.split(" ")
+			}
+			System.out.println("Frase1"+frase1);
+			System.out.println("Frase2"+frase2);
+		ayuda="";
+			System.out.println("Recibiendo una palbra: "+cad);
+			cad=cad.replace(" ", "");
+			cad=cad.replace(",", "");
+			StringBuilder sb= new StringBuilder(cad);
+			ayuda=sb.reverse().toString();
+			
+		
+			
+		
+			fsalida.println();
+			if(cad.equals("quit"))break;
+			
+		}
+	System.out.println("Cerrando conexion... ");
+	fentrada.close();
+	fsalida.close();
+	ClienteConectado.close();
+	servidor.close();
+	}// main
+
+
+
+}
+//fin de Ejemplo1Servidor
+
+

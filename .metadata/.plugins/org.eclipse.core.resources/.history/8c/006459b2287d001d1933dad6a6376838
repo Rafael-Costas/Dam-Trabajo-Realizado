@@ -1,0 +1,11 @@
+package Examen;
+
+public class testLibro {
+
+	public static void main(String[] args) {
+		
+		Libro Ad=new Libro("Adeline", "Marta", 7, 1);
+		
+		Libro C=new Libro();
+	}
+}

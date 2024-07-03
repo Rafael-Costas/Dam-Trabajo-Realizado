@@ -1,0 +1,4 @@
+Genera un array de 50 posiciones enteras que
+tomarán valores entre - 100 y 100. Separe en dos matrices
+los valores positivos (incluido el cero) y los negativos en
+otra. Ordene ambos arrays por el método Quicksort.

@@ -1,0 +1,4 @@
+El numero de X es: 1
+El numero de F es: 0
+El numero de H es: 0
+El total de la suma de dichas letras es de 1

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Ejemplo85.VentanaPrincipal&apos; to &apos;VentanaPrincipal2&apos;&#x0D;&#x0A;- Original project: &apos;3Temporada&apos;&#x0D;&#x0A;- Original element: &apos;Ejemplo85.VentanaPrincipal&apos;&#x0D;&#x0A;- Renamed element: &apos;Ejemplo85.VentanaPrincipal2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;VentanaPrincipal&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Ejemplo85{VentanaPrincipal.java[VentanaPrincipal" matchStrategy="1" name="VentanaPrincipal2" qualified="false" references="true" similarDeclarations="false" stamp="1685889353325" textual="false" version="1.0"/>
+</session>

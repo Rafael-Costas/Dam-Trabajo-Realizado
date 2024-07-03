@@ -1,0 +1,8 @@
+package modelo;
+
+public class Country {
+
+	private int id;
+	private String pais;
+	private String fecha;
+}

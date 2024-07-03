@@ -1,0 +1,14 @@
+package controlador;
+
+import modelo.countryDao;
+import vistas.country;
+
+public class Coordinador {
+
+	country count;
+	countryDao countDao;
+	
+	public void mostrarVentanaRegistro() {
+		count.setVisible(true);
+	}
+}

@@ -1,0 +1,53 @@
+package Examen;
+
+import java.util.Scanner;
+
+public class Ejercicio5 {
+
+	/*
+	 * Se desea realizar un pago mediante billetes de curso legal. El programa
+	 * pedirá la cantidad de pesetas a pagar y mostrará en pantalla el número de
+	 * billetes de 10000, 5000, 2000, 1000, 500, 200 y 100 necesarios para realizar
+	 * el pago. Así mismo devolverá el resto a pagar en monedas.
+	 */
+	
+	public static void main(String[] args) {
+		
+	
+	Scanner src= new Scanner(System.in);
+	System.out.println("Cuanto has dde pagar");
+	int pago=src.nextInt();
+int diezM=0, cincoM=0, dosM=0, M=0, Qui=0;
+	
+	do {
+		if(pago>=10000) {
+			pago-=10000;
+			 diezM++;
+		}
+		if(pago>=5000 && pago <10000) {
+			pago-=5000;
+			 cincoM++;
+		}
+		if(pago>=2000 && pago <5000) {
+			pago-=2000;
+			 dosM++;
+		}
+		if(pago>=1000 && pago <2000) {
+			pago-=1000;
+			 M++;
+		}
+		if(pago>=500 && pago <1000) {
+			pago-=500;
+			 Qui++;
+		}
+		if(pago>=200 && pago<500) {
+			pago-=200;
+			int diezM;
+		}
+		if(pago>=10000) {
+			pago-=10000;
+			int diezM;
+		}
+	}while(pago>=100);
+	}
+}

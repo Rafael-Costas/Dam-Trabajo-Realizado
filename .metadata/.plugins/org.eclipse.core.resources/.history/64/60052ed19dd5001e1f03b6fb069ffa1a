@@ -1,0 +1,32 @@
+package controlador;
+
+import Vista.añadir;
+
+
+public class Principal {
+	Coordinador miCoordinador;
+	añadir añ;
+	public static void main(String[] args) {
+		Principal miPrincipal=new Principal();
+		miPrincipal.iniciar();
+	}
+	private void iniciar() {
+		/*Se instancian las clases*/
+		añ=new añadir();
+		
+		miCoordinador= new Coordinador();
+		añ.setCoordinador(miCoordinador);
+		/*Se establecen las relaciones entre clases*/
+	/*	miVentanaPrincipal.setCoordinador(miCoordinador);
+		miVentanaRegistro.setCoordinador(miCoordinador);
+		miVentanaBuscar.setCoordinador(miCoordinador);
+		miLogica.setCoordinador(miCoordinador);
+		
+		miCoordinador.setMiVentanaPrincipal(miVentanaPrincipal);
+		miCoordinador.setMiVentanaRegistro(miVentanaRegistro);
+		miCoordinador.setMiVentanaBuscar(miVentanaBuscar);
+		miCoordinador.setMiLogica(miLogica);
+		*/		
+		añ.setVisible(true);
+	}
+}

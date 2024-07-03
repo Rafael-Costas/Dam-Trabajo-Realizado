@@ -1,0 +1,28 @@
+package Controlador;
+
+
+import modelo.countryDao;
+import vistas.country;
+
+public class Principal {
+
+	Coordinador cord;
+	country count;
+	countryDao countDao;
+	
+	public static void main(String[] args) {
+		Principal miPrincipal=new Principal();
+		miPrincipal.iniciar();
+	}
+	private void iniciar() {
+		count=new country();
+		countDao= new countryDao();
+		cord= new Coordinador();
+		count.setCoordinador(cord);
+		countDao.setCoordinador(cord);
+		cord.setCount(count);
+		cord.setCountDao(countDao);
+		
+		count.setVisible(true);
+	}
+}

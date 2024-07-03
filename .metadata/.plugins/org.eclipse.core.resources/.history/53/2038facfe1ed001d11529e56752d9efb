@@ -1,0 +1,12 @@
+package CarreraCiclista2;
+
+public class Contrarrelojista extends Ciclista{
+
+	protected double velocidadMaxima=0;
+	public Contrarrelojista(int identificador, String nombre, int tiempoAcumulado, int posicionGeneral, double vM) {
+		super(identificador, nombre, tiempoAcumulado, posicionGeneral);
+		// TODO Auto-generated constructor stub
+		this.velocidadMaxima=
+	}
+
+}

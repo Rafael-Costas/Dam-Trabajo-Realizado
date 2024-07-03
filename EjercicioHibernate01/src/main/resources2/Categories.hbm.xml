@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 27 feb 2024, 12:34:43 by Hibernate Tools 6.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="northwind" name="Categories" optimistic-lock="none" table="categories">
+        <id name="categoryId" type="java.lang.Integer">
+            <column name="CategoryID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="categoryName" type="string">
+            <column length="15" name="CategoryName" not-null="true"/>
+        </property>
+        <property name="description" type="string">
+            <column name="Description"/>
+        </property>
+        <property name="picture" type="binary">
+            <column name="Picture"/>
+        </property>
+    </class>
+</hibernate-mapping>

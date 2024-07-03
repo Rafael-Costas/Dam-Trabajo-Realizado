@@ -1,0 +1,30 @@
+package org.apache.maven.AYUDAAAAAAAAA;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	SessionFactory sf = new Configuration().configure("hibernate.cfg.xml") .addAnnotatedClass(gatos.class) .buildSessionFactory();
+     //   SessionFactory sf = new Configuration().configure().buildSessionFactory();
+        org.hibernate.Session session= sf.openSession();
+        
+        session.getTransaction().begin();
+        
+        gatos coso= new gatos();
+        misu.setId(10);
+        misu.setNombre("Si");
+        misu.setRaza("No importa");
+        misu.setFoto("pereza");
+        session.persist(misu);
+        session.getTransaction().commit();
+        session.close();
+        sf.close();
+    }
+}

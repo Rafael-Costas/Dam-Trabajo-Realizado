@@ -1,0 +1,10 @@
+package CarreraCiclista2;
+
+public class test {
+
+	public static void main(String[] args) {
+		Equipo España = new Equipo("España", "Galicia");
+		Velocista Rajoy = new Velocista(1, "M.Rajoy", 70, 4, 43, 43);
+	
+	}
+}

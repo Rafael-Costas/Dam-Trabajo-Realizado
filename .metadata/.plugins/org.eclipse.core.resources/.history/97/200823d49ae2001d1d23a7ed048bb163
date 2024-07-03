@@ -1,0 +1,7 @@
+package Ejemplo5;
+
+public class CuentaCorriente extends Cuenta {
+
+	
+	
+}

@@ -1,0 +1,5 @@
+El numero de a es: 43
+El numero de e es: 59
+El numero de i es: 15
+El numero de o es: 72
+El numero de u es: 20

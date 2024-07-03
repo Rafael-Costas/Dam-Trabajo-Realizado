@@ -1,0 +1,8 @@
+package CarreraCiclista2;
+
+public class test {
+
+	public static void main(String[] args) {
+		Equipo España = new Equipo("España", "Galicia");
+	}
+}

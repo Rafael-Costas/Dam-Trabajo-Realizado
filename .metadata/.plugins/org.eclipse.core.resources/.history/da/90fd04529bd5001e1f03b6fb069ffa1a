@@ -1,0 +1,19 @@
+package controlador;
+
+import Vista.añadir;
+
+public class Coordinador {
+private añadir añadir;
+
+public añadir getAñadir() {
+	return añadir;
+}
+
+public void setAñadir(añadir añadir) {
+	this.añadir = añadir;
+}
+
+public void mostrarAñadir() {
+	miVentanaRegistro.setVisible(true);
+}
+}

@@ -1,0 +1,89 @@
+package Examen;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketException;
+import java.util.Calendar;
+
+import org.apache.commons.lang3.StringUtils;
+
+import ChatGrafico.HiloServidor;
+
+public class Servidor5 {
+	static ServerSocket servidor;
+	public static void main(String[] arg) throws IOException {
+		int numeroPuerto = 6000;// Puerto
+		 servidor = new ServerSocket(numeroPuerto);
+		String cad="";
+		System.out.println("Esperando Conexion...");
+		Socket ClienteConectado;
+		
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		
+		String cadena, eco="";
+		
+		Calendar calendar;
+		
+		String ayuda="";
+		while (true) {
+			 ClienteConectado = new Socket();
+			try {
+				ClienteConectado = servidor.accept();
+
+			} catch (SocketException ns) {
+				break;
+
+			}
+
+			
+			HiloEco hilo = new HiloEco(ClienteConectado);
+			hilo.start();
+
+		}
+		
+		PrintWriter fsalida= new PrintWriter(ClienteConectado.getOutputStream(), true);
+		BufferedReader fentrada = new BufferedReader(new InputStreamReader(ClienteConectado.getInputStream()));
+		while ((cad=fentrada.readLine())!=null) {
+		ayuda="";
+			System.out.println("Recibiendo una palbra: "+cad);
+			cad=cad.replace(" ", "");
+			cad=cad.replace(",", "");
+			StringBuilder sb= new StringBuilder(cad);
+			ayuda=sb.reverse().toString();
+			
+			 StringUtils.stripAccents(cad);
+			ayuda=ayuda.toLowerCase();
+			cad=cad.toLowerCase();
+			if(cad.trim()!=null) {
+			System.out.println(cad.trim());
+			System.out.println(StringUtils.stripAccents(ayuda));
+			System.out.println(cad);
+			if(StringUtils.stripAccents(ayuda).compareTo(StringUtils.stripAccents(cad))==0) {
+				fsalida.print("Es palindromo");
+			}else {
+				fsalida.print("No es palindromo");
+			}
+			}else {
+				System.out.println("Alguien se ha desconectado");
+			}
+		
+			fsalida.println();
+			
+			
+		}
+	System.out.println("Cerrando conexion... ");
+	fentrada.close();
+	fsalida.close();
+	ClienteConectado.close();
+	servidor.close();
+	}// main
+
+
+
+}
+//fin de Ejemplo1Servidor
+

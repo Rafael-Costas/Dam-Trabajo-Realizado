@@ -1,0 +1,20 @@
+package UdpUno;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+
+public class Cliente {
+
+	public static void main(String[] args) throws UnknownHostException, SocketException {
+		InetAddress destino = InetAddress.getLocalHost();
+		int port =12345;
+		String saludo= "Enviando saludos";
+		byte []mensaje = saludo.getBytes();
+		DatagramPacket envio = new DatagramPacket(mensaje, mensaje.length, destino, port);
+		DatagramSocket socket = new DatagramSocket(34567);
+		System.out.println("Enviando datagrama de longitud "+mensaje.length);
+	}
+}

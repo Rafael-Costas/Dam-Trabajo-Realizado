@@ -1,0 +1,12 @@
+package controlador;
+
+import Vista.añadir;
+
+public class Principal {
+	Coordinador miCoordinador;
+	añadir añ;
+	public static void main(String[] args) {
+		Principal miPrincipal=new Principal();
+		miPrincipal.iniciar();
+	}
+}

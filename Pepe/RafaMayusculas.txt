@@ -1,0 +1,4 @@
+El numero de D es: 1
+El numero de J es: 0
+El numero de R es: 5
+El total de la suma de dichas letras es de 6

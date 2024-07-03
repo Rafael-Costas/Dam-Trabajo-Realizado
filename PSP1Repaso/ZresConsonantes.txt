@@ -1,0 +1,3 @@
+El numero de k es: 0
+El numero de u es: 44
+El numero de o es: 73

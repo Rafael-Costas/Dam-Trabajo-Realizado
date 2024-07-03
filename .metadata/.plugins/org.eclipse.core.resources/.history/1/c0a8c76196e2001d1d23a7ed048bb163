@@ -1,0 +1,28 @@
+package Ejemplo5;
+
+public class CuentaAhorros extends Cuenta{
+
+	private boolean activo;
+	public CuentaAhorros(float saldo, float TasaAnual) {
+		super(saldo, TasaAnual);
+		if(this.saldo>10000) {
+			this.activo=true;
+		}else {
+			this.activo=false;
+		}
+	}
+	
+	@Override
+	public void consignar(float cantidad) {
+		if(activo)
+		super.consignar(cantidad);
+	}
+	@Override
+	public void retirar(int cantidad) {
+		if(activo)
+		super.retirar(cantidad);
+	}
+
+	
+	
+}

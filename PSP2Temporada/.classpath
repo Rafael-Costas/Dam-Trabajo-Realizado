@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/commons-lang3-3.14.0-bin/commons-lang3-3.14.0/commons-lang3-3.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/commons-lang3-3.14.0-bin/commons-lang3-3.14.0/commons-lang3-3.14.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/commons-lang3-3.14.0-bin/commons-lang3-3.14.0/commons-lang3-3.14.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/commons-lang3-3.14.0-bin/commons-lang3-3.14.0/commons-lang3-3.14.0-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/commons-lang3-3.14.0-bin/commons-lang3-3.14.0/commons-lang3-3.14.0-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/ant.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/bloat-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-all-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-bench.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-core-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-cs.optional-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-cs-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-db4ounit-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-instrumentation-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-nqopt-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-optional-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-osgi-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-osgi-test-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-taj-java5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rafae/OneDrive/Escritorio/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-tools-java5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

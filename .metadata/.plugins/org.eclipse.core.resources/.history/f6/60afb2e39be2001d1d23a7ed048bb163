@@ -1,0 +1,27 @@
+package Ejemplo5;
+
+public class CuentaCorriente extends Cuenta {
+double Sobregiro;
+	public CuentaCorriente(float saldo, float TasaAnual) {
+		super(saldo, TasaAnual);
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public void retirar(int cantidad) {
+		if(saldo>= cantidad) {
+			saldo-=cantidad;
+			NumeroRetiro++;
+		}else {
+		saldo=0;
+		Sobregiro=cantidad-saldo;
+		}
+		}
+
+	@Override
+	public void consignar(float cantidad) {
+		// TODO Auto-generated method stub
+		super.consignar(cantidad);
+	}
+	
+	
+}

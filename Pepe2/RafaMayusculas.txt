@@ -1,0 +1,4 @@
+El numero de Y es: 0
+El numero de H es: 0
+El numero de M es: 2
+El total de la suma de dichas letras es de 2

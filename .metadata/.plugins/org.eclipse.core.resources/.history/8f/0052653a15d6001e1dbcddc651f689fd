@@ -1,0 +1,27 @@
+package controlador;
+
+import Vista.añadir;
+import modelo.añadirDao;
+import modelo.countryDao;
+import vistas.country;
+
+public class Principal {
+
+	Coordinador cord;
+	country count;
+	countryDao countDao;
+	
+	public static void main(String[] args) {
+		Principal miPrincipal=new Principal();
+		miPrincipal.iniciar();
+	}
+	private void iniciar() {
+		añ=new añadir();
+		año= new añadirDao();
+		miCoordinador= new Coordinador();
+		añ.setCoordinador(miCoordinador);
+		año.setCoordinador(miCoordinador);
+		miCoordinador.setAñadir(añ);
+		miCoordinador.setDao(año);
+	}
+}

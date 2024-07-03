@@ -1,0 +1,15 @@
+package Ejemplo5;
+
+public class CuentaAhorros extends Cuenta{
+
+	boolean activo;
+	public CuentaAhorros(float saldo, float TasaAnual) {
+		super(saldo, TasaAnual);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public 
+
+	
+	
+}

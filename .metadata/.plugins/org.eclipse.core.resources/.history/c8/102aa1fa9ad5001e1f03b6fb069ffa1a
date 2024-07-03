@@ -1,0 +1,7 @@
+package controlador;
+
+import Vista.añadir;
+
+public class Coordinador {
+private añadir aladir;
+}

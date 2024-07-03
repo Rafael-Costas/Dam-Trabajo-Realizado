@@ -1,0 +1,9 @@
+package controlador;
+
+import vistas.country;
+
+public class Principal {
+
+	Coordinador cord;
+	country coun;
+}

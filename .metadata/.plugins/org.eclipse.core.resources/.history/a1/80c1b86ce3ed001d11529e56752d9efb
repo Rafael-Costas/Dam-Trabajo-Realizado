@@ -1,0 +1,17 @@
+package CarreraCiclista2;
+
+public class test {
+
+	public static void main(String[] args) {
+		Equipo España = new Equipo("España", "Galicia");
+		Velocista Rajoy = new Velocista(1, "M.Rajoy", 70, 4, 43, 43);
+		Escalador Obama = new Escalador(3, "Obama", 43, 2, 1, 2);
+		Contrarrelojista Odin = new Contrarrelojista(4, "Odin", 3, 2, 32);
+	España.añadirCicilista(Odin);
+	España.añadirCicilista(Rajoy);
+	España.añadirCicilista(Obama);
+	
+	España.calcularTotalTiempo();
+	España.listaCilistas.toString();
+	}
+}

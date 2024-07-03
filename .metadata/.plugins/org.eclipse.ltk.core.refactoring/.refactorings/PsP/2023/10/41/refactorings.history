@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;classpathProcesadorFichero&apos; in &apos;Ejemplo5.Launcher.main(...)&apos; to &apos;ruta&apos;&#x0D;&#x0A;- Original project: &apos;PsP&apos;&#x0D;&#x0A;- Original element: &apos;Ejemplo5.Launcher.main(String[]).classpathProcesadorFichero&apos;&#x0D;&#x0A;- Renamed element: &apos;classpathProcesadorFichero&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;classpathProcesadorFichero&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;Ejemplo5{Launcher.java[Launcher~main~\[QString;@classpathProcesadorFichero!842!875!849!874!QString;!0!false" name="ruta" references="true" stamp="1697013304980" version="1.0"/>
+</session>

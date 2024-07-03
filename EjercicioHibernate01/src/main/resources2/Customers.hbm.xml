@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 27 feb 2024, 12:34:43 by Hibernate Tools 6.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="northwind" name="Customers" optimistic-lock="none" table="customers">
+        <id name="customerId" type="string">
+            <column length="5" name="CustomerID"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="companyName" type="string">
+            <column length="40" name="CompanyName" not-null="true"/>
+        </property>
+        <property name="contactName" type="string">
+            <column length="30" name="ContactName"/>
+        </property>
+        <property name="contactTitle" type="string">
+            <column length="30" name="ContactTitle"/>
+        </property>
+        <property name="address" type="string">
+            <column length="60" name="Address"/>
+        </property>
+        <property name="city" type="string">
+            <column length="15" name="City"/>
+        </property>
+        <property name="region" type="string">
+            <column length="15" name="Region"/>
+        </property>
+        <property name="postalCode" type="string">
+            <column length="10" name="PostalCode"/>
+        </property>
+        <property name="country" type="string">
+            <column length="15" name="Country"/>
+        </property>
+        <property name="phone" type="string">
+            <column length="24" name="Phone"/>
+        </property>
+        <property name="fax" type="string">
+            <column length="24" name="Fax"/>
+        </property>
+        <set fetch="select" inverse="false" lazy="true" name="customerdemographicses" table="customercustomerdemo">
+            <key>
+                <column length="5" name="CustomerID" not-null="true"/>
+            </key>
+            <many-to-many entity-name="Customerdemographics">
+                <column length="10" name="CustomerTypeID" not-null="true"/>
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

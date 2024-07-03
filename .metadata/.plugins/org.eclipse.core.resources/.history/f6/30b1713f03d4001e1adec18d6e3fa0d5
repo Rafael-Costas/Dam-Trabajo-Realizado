@@ -1,0 +1,26 @@
+package Estudio;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.util.Scanner;
+
+public class Server1 {
+
+	public static void main(String[] args) throws IOException {
+		
+		byte[] bufer = new byte[1024];
+		DatagramSocket socket = new DatagramSocket(12345);
+		System.out.println("Esperando al datagrama.... ");
+		DatagramPacket recibo = new DatagramPacket(bufer, bufer.length);
+		socket.receive(recibo);
+		int byteRec = recibo.getLength();
+		String paquete= new String(recibo.getData());
+		int año= Integer.parseInt(paquete.trim());
+	
+		System.out.println("Contenido de paqete: "+paquete.trim());
+	
+		socket.close();
+}
+}

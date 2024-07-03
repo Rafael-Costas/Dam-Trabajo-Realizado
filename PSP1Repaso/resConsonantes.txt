@@ -1,0 +1,4 @@
+El numero de R es: 5
+El numero de T es: 2
+El numero de V es: 0
+El total de la suma de dichas letras es de 7

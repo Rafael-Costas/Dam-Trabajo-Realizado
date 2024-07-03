@@ -1,0 +1,11 @@
+Rafa = Jose 
+Apellidos = Ricardo 
+Cargo = Directivo 
+Genero = Masculino 
+Salario = $1245.0 
+Dias trabajados = 30 
+Otros ingresos = $12.0 
+Pagos saludo = $1.0 
+Aportes pensiones = $121.0 
+--------- 
+Total nómina = $74480,00 

@@ -1,0 +1,3 @@
+El numero de a es: 140
+El numero de h es: 9
+El numero de ñ es: 0
